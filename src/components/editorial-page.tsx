@@ -13,7 +13,7 @@ export function EditorialPage({
   title: string;
   deck: string;
   children: React.ReactNode;
-  next?: { to: "/dossier" | "/boek" | "/filosofie" | "/juridisch" | "/ontkoppeling" | "/archief" | "/claims"; label: string };
+  next?: { to: "/onderzoek" | "/juridisch" | "/archief" | "/claims"; label: string };
 }) {
   return (
     <SiteShell>

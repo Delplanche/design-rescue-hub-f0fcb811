@@ -4,9 +4,8 @@ import { useState, type ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 
 const navigation = [
-  ["Manifest", "/"], ["Dossier", "/dossier"], ["Boek", "/boek"],
-  ["Filosofie", "/filosofie"], ["Juridisch", "/juridisch"],
-  ["Ontkoppeling", "/ontkoppeling"], ["Archief", "/archief"],
+  ["Manifest", "/"], ["Onderzoek", "/onderzoek"],
+  ["Bibliotheek", "/archief"], ["Juridisch", "/juridisch"],
 ] as const;
 
 export function SiteShell({ children }: { children: ReactNode }) {
@@ -30,14 +29,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
     <footer className="archive-footer">
       <div className="footer-inner">
         <section className="footer-project">
-          <p className="footer-kicker">Onafhankelijke onderzoeks- en essaypublicatie</p>
+          <p className="footer-kicker">Onafhankelijke onderzoeksbibliotheek</p>
           <p className="footer-title">De Marktplaats van de Ziel</p>
-          <p>Feitelijk dossier: Achter het profiel · Editie 01.</p>
+          <p>Zes onderzoeksboeken en één pers-whitepaper · record-versie 2026.</p>
         </section>
         <nav className="footer-sitemap" aria-label="Sitemap">
           <p className="footer-kicker">Documentatie</p>
-          <Link to="/">Manifest</Link><Link to="/dossier">Dossier</Link><Link to="/boek">Boek</Link>
-          <Link to="/juridisch">Juridisch</Link><Link to="/archief">Archief</Link><Link to="/claims">Claimregister</Link>
+          <Link to="/">Manifest</Link><Link to="/onderzoek">Onderzoek</Link><Link to="/archief">Bibliotheek</Link>
+          <Link to="/juridisch">Juridisch</Link><Link to="/claims">Claimregister</Link>
           <Link to="/bronnen">Bronnen</Link><Link to="/methodologie">Methode & correcties</Link>
         </nav>
         <section className="footer-colophon">
