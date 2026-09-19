@@ -39,8 +39,8 @@ BOOKS = [
              "schakel staat in geen enkel document dat de koper ooit ziet.",
      "chapters": _renumber(book2.CHAPTERS)},
     {"roman": "III", "slug": "boek-iii-de-neurobiologie-van-de-afhankelijkheid",
-     "title": "De neurobiologie van de afhankelijkheid",
-     "subtitle": "Variabele beloning, empathische uitputting en de arbeid van het meeleven",
+     "title": "De neurobiologie van de verslaving",
+     "subtitle": "Variable-reward, operator-psychologie en de arbeid van het meeleven",
      "deck": "Eén gedragspsychologisch principe verklaart waarom onvoorspelbaar betaald contact zo sterk "
              "bindt — en waar de uitleg ophoudt en de speculatie zou beginnen.",
      "chapters": _renumber(book3.CHAPTERS)},
@@ -51,8 +51,8 @@ BOOKS = [
              "afgebakend: statistiek als vaststelling, substitutie als expliciete hypothese.",
      "chapters": _renumber(book4.CHAPTERS)},
     {"roman": "V", "slug": "boek-v-het-juridisch-failliet",
-     "title": "Het juridisch failliet & Lex Humanitas Digitalis",
-     "subtitle": "AVG, DSA en AI-verordening, ketenaansprakelijkheid en een modelvoorstel",
+     "title": "Het juridisch failliet & modelwetgeving",
+     "subtitle": "AVG, DSA en AI-verordening, ketenaansprakelijkheid en Lex Humanitas Digitalis",
      "deck": "Het recht kent de misleidende omissie, maar geen meldplicht over wie schrijft. Dit deel toont "
              "wat al geldt, wat niet wordt gehandhaafd en hoe één korte regel het gat dicht.",
      "chapters": _renumber(book5.CHAPTERS)},

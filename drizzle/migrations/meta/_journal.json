@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1789816968214,
+      "tag": "0000_create_publications_catalog",
+      "breakpoints": true
+    }
+  ]
+}

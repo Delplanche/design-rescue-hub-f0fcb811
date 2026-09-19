@@ -33,8 +33,8 @@ CHAPTERS = [
           "Uitgaven: welk aandeel van het besteedbaar inkomen van jonge mannen gaat naar deze diensten? Dat is via huishoudbudgetonderzoek meetbaar.",
           "Zelfrapportage: hoe waarderen gebruikers het contact ten opzichte van offline contact — als aanvulling of als vervanging?"]),
   ("p", "Zolang die drie niet zijn gemeten, is elke uitspraak over maatschappelijke effecten interpretatie. Dit boek markeert zulke uitspraken uitdrukkelijk als hypothese. [CL-23]"),
-  ("box", "Uitgesloten kader",
-   "Eerdere versies van dit dossier verwezen naar ideologische bewegingen die vrijwillige uitsterving bepleiten. Die verwijzing is volledig verwijderd. Zij voegde geen bewijs toe, was speculatief en verzwakte de forensische waarde van het geheel. Dit boek beperkt zich tot geregistreerde statistiek en toetsbare hypothesen."),
+  ("box", "Afbakening",
+   "Dit boek beperkt zich tot geregistreerde statistiek en toetsbare hypothesen. Verklaringen zonder controleerbare gegevens vallen buiten het analysekader."),
  ]},
 
 {"num": "03", "part": "DEEL II — HET SCENARIO",
@@ -79,7 +79,7 @@ CHAPTERS = [
  "deck": "Van alle zes delen is dit het deel waar overdrijving het meest voor de hand ligt. Daarom staat de grens hier in volle lengte.",
  "blocks": [
   ("box", "Wat dit boek niet beweert",
-   "Niet: dat deze bedrijfstak geboortecijfers beïnvloedt. Niet: dat zij relatievorming meetbaar verdringt. Niet: dat Korea en Japan een voorspelling zijn voor Europa. Niet: dat er een ideologisch project achter zit. Elk van die vier beweringen is in eerdere versies van dit dossier voorgekomen of gesuggereerd; alle vier zijn hier verwijderd."),
+   "Niet: dat deze bedrijfstak geboortecijfers beïnvloedt. Niet: dat zij relatievorming meetbaar verdringt. Niet: dat Korea en Japan een voorspelling zijn voor Europa. Zulke beweringen volgen niet uit de beschikbare data en worden daarom niet gedaan."),
   ("p", "Wat overblijft, is wat controleerbaar is: drie geregistreerde statistische vaststellingen [CL-21] [CL-22], één marktfeit over betalingsbereidheid, en één expliciet gemarkeerde hypothese over substitutie [CL-23] met de meetagenda die haar zou kunnen toetsen."),
   ("h2", "Waarom dat genoeg is"),
   ("p", "De juridische en feitelijke kern van dit dossier — dat een koper niet weet wie tegen hem schrijft — heeft geen demografisch argument nodig. Zij staat op eigen benen in Boek I en Boek V. Dit boek is daarom niet de motor van het betoog maar zijn contextdeel, en het is bewust zo geschreven dat het in een procedure niet tegen de rest gebruikt kan worden."),
