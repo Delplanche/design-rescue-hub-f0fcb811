@@ -14,7 +14,57 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      publications: {
+        Row: {
+          audience: string
+          code: string
+          created_at: string
+          description: string
+          file_size: string
+          format: string
+          id: string
+          is_published: boolean
+          kind: string
+          page_count: number
+          pdf_path: string
+          sort_order: number
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          audience: string
+          code: string
+          created_at?: string
+          description: string
+          file_size: string
+          format: string
+          id?: string
+          is_published?: boolean
+          kind: string
+          page_count: number
+          pdf_path: string
+          sort_order: number
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          audience?: string
+          code?: string
+          created_at?: string
+          description?: string
+          file_size?: string
+          format?: string
+          id?: string
+          is_published?: boolean
+          kind?: string
+          page_count?: number
+          pdf_path?: string
+          sort_order?: number
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
