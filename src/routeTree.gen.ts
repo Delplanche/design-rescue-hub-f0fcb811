@@ -18,6 +18,7 @@ import { Route as DossierRouteImport } from './routes/dossier'
 import { Route as FilosofieRouteImport } from './routes/filosofie'
 import { Route as JuridischRouteImport } from './routes/juridisch'
 import { Route as MethodologieRouteImport } from './routes/methodologie'
+import { Route as OnderzoekRouteImport } from './routes/onderzoek'
 import { Route as OntkoppelingRouteImport } from './routes/ontkoppeling'
 import { Route as BoekIndexRouteImport } from './routes/boek.index'
 import { Route as BoekSlugRouteImport } from './routes/boek.$slug'
@@ -26,6 +27,8 @@ import { Route as DossierSlugRouteImport } from './routes/dossier.$slug'
 import { Route as HoofdstukSlugRouteImport } from './routes/hoofdstuk.$slug'
 import { Route as JuridischIndexRouteImport } from './routes/juridisch.index'
 import { Route as JuridischLexHumanitasRouteImport } from './routes/juridisch.lex-humanitas'
+import { Route as OnderzoekIndexRouteImport } from './routes/onderzoek.index'
+import { Route as OnderzoekSlugRouteImport } from './routes/onderzoek.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -72,6 +75,11 @@ const MethodologieRoute = MethodologieRouteImport.update({
   path: '/methodologie',
   getParentRoute: () => rootRouteImport,
 } as any)
+const OnderzoekRoute = OnderzoekRouteImport.update({
+  id: '/onderzoek',
+  path: '/onderzoek',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const OntkoppelingRoute = OntkoppelingRouteImport.update({
   id: '/ontkoppeling',
   path: '/ontkoppeling',
@@ -112,6 +120,16 @@ const JuridischLexHumanitasRoute = JuridischLexHumanitasRouteImport.update({
   path: '/lex-humanitas',
   getParentRoute: () => JuridischRoute,
 } as any)
+const OnderzoekIndexRoute = OnderzoekIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => OnderzoekRoute,
+} as any)
+const OnderzoekSlugRoute = OnderzoekSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => OnderzoekRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -123,14 +141,17 @@ export interface FileRoutesByFullPath {
   '/filosofie': typeof FilosofieRoute
   '/juridisch': typeof JuridischRouteWithChildren
   '/methodologie': typeof MethodologieRoute
+  '/onderzoek': typeof OnderzoekRouteWithChildren
   '/ontkoppeling': typeof OntkoppelingRoute
   '/boek/$slug': typeof BoekSlugRoute
   '/dossier/$slug': typeof DossierSlugRoute
   '/hoofdstuk/$slug': typeof HoofdstukSlugRoute
   '/juridisch/lex-humanitas': typeof JuridischLexHumanitasRoute
+  '/onderzoek/$slug': typeof OnderzoekSlugRoute
   '/boek/': typeof BoekIndexRoute
   '/dossier/': typeof DossierIndexRoute
   '/juridisch/': typeof JuridischIndexRoute
+  '/onderzoek/': typeof OnderzoekIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -144,9 +165,11 @@ export interface FileRoutesByTo {
   '/dossier/$slug': typeof DossierSlugRoute
   '/hoofdstuk/$slug': typeof HoofdstukSlugRoute
   '/juridisch/lex-humanitas': typeof JuridischLexHumanitasRoute
+  '/onderzoek/$slug': typeof OnderzoekSlugRoute
   '/boek': typeof BoekIndexRoute
   '/dossier': typeof DossierIndexRoute
   '/juridisch': typeof JuridischIndexRoute
+  '/onderzoek': typeof OnderzoekIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -159,14 +182,17 @@ export interface FileRoutesById {
   '/filosofie': typeof FilosofieRoute
   '/juridisch': typeof JuridischRouteWithChildren
   '/methodologie': typeof MethodologieRoute
+  '/onderzoek': typeof OnderzoekRouteWithChildren
   '/ontkoppeling': typeof OntkoppelingRoute
   '/boek/$slug': typeof BoekSlugRoute
   '/dossier/$slug': typeof DossierSlugRoute
   '/hoofdstuk/$slug': typeof HoofdstukSlugRoute
   '/juridisch/lex-humanitas': typeof JuridischLexHumanitasRoute
+  '/onderzoek/$slug': typeof OnderzoekSlugRoute
   '/boek/': typeof BoekIndexRoute
   '/dossier/': typeof DossierIndexRoute
   '/juridisch/': typeof JuridischIndexRoute
+  '/onderzoek/': typeof OnderzoekIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -180,14 +206,17 @@ export interface FileRouteTypes {
     | '/filosofie'
     | '/juridisch'
     | '/methodologie'
+    | '/onderzoek'
     | '/ontkoppeling'
     | '/boek/$slug'
     | '/dossier/$slug'
     | '/hoofdstuk/$slug'
     | '/juridisch/lex-humanitas'
+    | '/onderzoek/$slug'
     | '/boek/'
     | '/dossier/'
     | '/juridisch/'
+    | '/onderzoek/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -201,9 +230,11 @@ export interface FileRouteTypes {
     | '/dossier/$slug'
     | '/hoofdstuk/$slug'
     | '/juridisch/lex-humanitas'
+    | '/onderzoek/$slug'
     | '/boek'
     | '/dossier'
     | '/juridisch'
+    | '/onderzoek'
   id:
     | '__root__'
     | '/'
@@ -215,14 +246,17 @@ export interface FileRouteTypes {
     | '/filosofie'
     | '/juridisch'
     | '/methodologie'
+    | '/onderzoek'
     | '/ontkoppeling'
     | '/boek/$slug'
     | '/dossier/$slug'
     | '/hoofdstuk/$slug'
     | '/juridisch/lex-humanitas'
+    | '/onderzoek/$slug'
     | '/boek/'
     | '/dossier/'
     | '/juridisch/'
+    | '/onderzoek/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -235,6 +269,7 @@ export interface RootRouteChildren {
   FilosofieRoute: typeof FilosofieRoute
   JuridischRoute: typeof JuridischRouteWithChildren
   MethodologieRoute: typeof MethodologieRoute
+  OnderzoekRoute: typeof OnderzoekRouteWithChildren
   OntkoppelingRoute: typeof OntkoppelingRoute
   HoofdstukSlugRoute: typeof HoofdstukSlugRoute
 }
@@ -304,6 +339,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof MethodologieRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/onderzoek': {
+      id: '/onderzoek'
+      path: '/onderzoek'
+      fullPath: '/onderzoek'
+      preLoaderRoute: typeof OnderzoekRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/ontkoppeling': {
       id: '/ontkoppeling'
       path: '/ontkoppeling'
@@ -360,6 +402,20 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof JuridischLexHumanitasRouteImport
       parentRoute: typeof JuridischRoute
     }
+    '/onderzoek/': {
+      id: '/onderzoek/'
+      path: '/'
+      fullPath: '/onderzoek/'
+      preLoaderRoute: typeof OnderzoekIndexRouteImport
+      parentRoute: typeof OnderzoekRoute
+    }
+    '/onderzoek/$slug': {
+      id: '/onderzoek/$slug'
+      path: '/$slug'
+      fullPath: '/onderzoek/$slug'
+      preLoaderRoute: typeof OnderzoekSlugRouteImport
+      parentRoute: typeof OnderzoekRoute
+    }
   }
 }
 
@@ -402,6 +458,20 @@ const JuridischRouteWithChildren = JuridischRoute._addFileChildren(
   JuridischRouteChildren,
 )
 
+interface OnderzoekRouteChildren {
+  OnderzoekSlugRoute: typeof OnderzoekSlugRoute
+  OnderzoekIndexRoute: typeof OnderzoekIndexRoute
+}
+
+const OnderzoekRouteChildren: OnderzoekRouteChildren = {
+  OnderzoekSlugRoute: OnderzoekSlugRoute,
+  OnderzoekIndexRoute: OnderzoekIndexRoute,
+}
+
+const OnderzoekRouteWithChildren = OnderzoekRoute._addFileChildren(
+  OnderzoekRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ArchiefRoute: ArchiefRoute,
@@ -412,6 +482,7 @@ const rootRouteChildren: RootRouteChildren = {
   FilosofieRoute: FilosofieRoute,
   JuridischRoute: JuridischRouteWithChildren,
   MethodologieRoute: MethodologieRoute,
+  OnderzoekRoute: OnderzoekRouteWithChildren,
   OntkoppelingRoute: OntkoppelingRoute,
   HoofdstukSlugRoute: HoofdstukSlugRoute,
 }
