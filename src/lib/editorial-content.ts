@@ -93,14 +93,3 @@ export const legalTests = [
   ["Controleerbaarheid", "Maak labels, audits en klachtenroutes toetsbaar in plaats van louter symbolisch."],
   ["Herstel", "Bied een werkbare route voor inzage, correctie, beëindiging en overdracht van gegevens."],
 ] as const;
-
-export const archivePublications = [
-  { kind: "VOLLEDIGE EDITIE", title: "De Marktplaats van de Ziel", description: "Elf hoofdstukken dichte analyse met letterlijke citaten uit undercoveronderzoek, productpagina’s en rechtbankstukken, gevolgd door chronologie, claimregister (20) en bronnenregister (39).", format: "A4", audience: "Onderzoek · juristen · pers", pages: "29 pagina’s", size: "196 kB", href: "/publicaties/de-marktplaats-van-de-ziel-editie-01.pdf" },
-  { kind: "EXECUTIVE WHITEPAPER", title: "Uitbestede intimiteit", description: "De vaststellingen, het juridische gat tussen art. 50 AI-verordening en art. 7 UCPD, en vijf concrete maatregelen — met bronverwijzingen.", format: "A4", audience: "Pers · beleid · toezicht", pages: "2 pagina’s", size: "98 kB", href: "/publicaties/achter-het-profiel-whitepaper.pdf" },
-  { kind: "BOEK-READER", title: "De Commodificatie van de Ziel", description: "De zelfstandige literaire en filosofische leeseditie, afgesloten met het post-digitale manifest.", format: "21 × 21 cm", audience: "Essay · filosofie", pages: "18 pagina’s", size: "1,3 MB", href: "/publicaties/de-commodificatie-van-de-ziel.pdf" },
-] as const;
-
-export const archiveVersions = [
-  { date: "19 september 2026", version: "Editie 02", note: "Volledige herschrijving: dichte hoofdstukken met verbatim citaten en primaire bronnen; vier te stellige beweringen ingetrokken of gedegradeerd tot onbevestigd." },
-  { date: "19 september 2026", version: "Editie 01", note: "Eerste controleerbare onderzoeksuitgave met claim- en bronnenregister." },
-] as const;
