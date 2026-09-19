@@ -1,0 +1,7 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ExternalLink } from "lucide-react";
+import { SiteShell } from "@/components/site-shell";
+import { sources } from "@/lib/dossier-data";
+
+export const Route = createFileRoute("/bronnen")({ head:()=>({meta:[{title:"Bronnenregister — Achter het profiel"},{name:"description",content:"Het openbare bronnenregister bij het onderzoeksdossier Achter het profiel."},{property:"og:title",content:"Bronnenregister — Achter het profiel"},{property:"og:description",content:"Journalistiek, wetgeving, toezicht en productbronnen, volledig herleidbaar."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary"}]}), component:SourcesPage });
+function SourcesPage(){return <SiteShell><main className="page-wrap"><header className="page-intro"><p className="content-kind kind-archief">Archief · bronnenregister</p><h1>Controleer het spoor.</h1><p>Bronnen zijn geselecteerd op directe relevantie, gezag en herleidbaarheid. Een platformbron toont wat een product belooft; niet of iedere klant het zo gebruikt.</p></header><div className="source-list">{sources.map(s=><a key={s.id} href={s.url} target="_blank" rel="noreferrer" className="source-row"><code>{s.id}</code><div><span className="source-type">{s.type}</span><h2>{s.title}</h2><p>{s.publisher} · {s.date}</p></div><ExternalLink size={17}/></a>)}</div><p className="registry-date">Laatste redactionele controle: 19 september 2026 · Externe links kunnen wijzigen.</p></main></SiteShell>}

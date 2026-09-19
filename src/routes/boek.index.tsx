@@ -1,0 +1,7 @@
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowRight } from "lucide-react";
+import { EditorialPage, SectionLabel } from "@/components/editorial-page";
+import { bookChapters } from "@/lib/editorial-content";
+
+export const Route = createFileRoute("/boek/")({head:()=>({meta:[{title:"Het boek — De Marktplaats van de Ziel"},{name:"description",content:"Literaire essays over intimiteit, marktlogica en wederkerigheid."},{property:"og:title",content:"Het boek — De Marktplaats van de Ziel"},{property:"og:description",content:"Een essayistische laag naast het controleerbare onderzoeksdossier."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary"}]}),component:BookPage});
+function BookPage(){return <EditorialPage kind="Essay" title="De commodificatie van de ziel" deck="Een boek in wording over wat marktlogica doet met de taal, verwachting en ervaring van nabijheid." next={{to:"/filosofie",label:"Lees de filosofische synthese"}}><aside className="evidence-note essay-note"><strong>Auteursduiding</strong><p>Deze teksten interpreteren en vragen. Feitelijke beweringen worden apart verantwoord in Achter het profiel.</p></aside><section><SectionLabel>Boekplan</SectionLabel><div className="chapter-list editorial-list">{bookChapters.map(c=><Link key={c.slug} to="/boek/$slug" params={{slug:c.slug}} className="chapter-item"><span className="chapter-nr">{c.nr}</span><div><h2>{c.title}</h2><p>{c.deck}</p></div><span className="read-label">Lees <ArrowRight/></span></Link>)}</div></section></EditorialPage>}
