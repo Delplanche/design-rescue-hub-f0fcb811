@@ -10,12 +10,11 @@ import sys
 from pathlib import Path
 
 from reportlab.lib.units import mm
-from reportlab.platypus import PageBreak, Paragraph, Spacer
+from reportlab.platypus import KeepTogether, PageBreak, Paragraph, Spacer
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from artwork import Fineliner, GlassPanels, QRCode  # noqa: E402
-from build_publications import render_blocks  # noqa: E402
 from glossary import GLOSSARY  # noqa: E402
 from hexalogy import BOOKS  # noqa: E402
 from hexalogy.extra_sources import EXTRA_CLAIMS, EXTRA_SOURCES  # noqa: E402
@@ -40,6 +39,32 @@ REF_RE = re.compile(r"(BR-\d\d|CL-\d\d)")
 
 ALL_SOURCES = list(SOURCES) + list(EXTRA_SOURCES)
 ALL_CLAIMS = list(CLAIMS) + list(EXTRA_CLAIMS)
+
+
+def render_blocks(blocks, st, width, story):
+    """Zet de gedeelde hoofdstukblokken naar ReportLab-elementen."""
+    for block in blocks:
+        kind = block[0]
+        if kind == "lead":
+            story.append(Paragraph(block[1], st["lead"]))
+        elif kind == "p":
+            story.extend([Paragraph(block[1], st["body"]), Spacer(1, 4.2)])
+        elif kind == "h2":
+            story.append(Paragraph(block[1], st["h2"]))
+        elif kind == "h3":
+            story.append(Paragraph(block[1], st["h3"]))
+        elif kind == "q":
+            story.append(KeepTogether([Paragraph("“" + block[1] + "”", st["quote"]), Paragraph(block[2], st["quote_src"])]))
+        elif kind == "ul":
+            for item in block[1]:
+                story.append(Paragraph(item, st["bullet"], bulletText="—"))
+            story.append(Spacer(1, 5))
+        elif kind == "box":
+            story.extend([Spacer(1, 4), Box([Paragraph(block[1].upper(), st["box_title"]), Paragraph(block[2], st["box_body"])], width), Spacer(1, 9)])
+        elif kind == "table":
+            rows = [[cell for cell in row] for row in block[1]]
+            widths = [width * part / 100.0 for part in block[2]]
+            story.extend([Spacer(1, 4), data_table(rows, widths, st), Spacer(1, 10)])
 
 
 def collect_refs(chapters) -> set[str]:
