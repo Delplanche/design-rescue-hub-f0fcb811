@@ -1,0 +1,14 @@
+{
+  "source": "github (https://github.com/Delplanche/design-rescue-hub-3928599c.git)",
+  "capabilities": [
+    { "capability": "Static editorial site (TanStack Start, no backend)", "source": "github", "outcome": "preserved", "status": "verified", "next_action": "none" },
+    { "capability": "Routes (manifest, dossier, boek, juridisch, archief, claims, bronnen, methodologie, filosofie, ontkoppeling)", "source": "github", "outcome": "preserved", "status": "verified", "next_action": "none" },
+    { "capability": "Design system (styles.css, fonts, illustrations)", "source": "github", "outcome": "preserved", "status": "verified", "next_action": "none" },
+    { "capability": "PDF publications (public/publicaties)", "source": "github", "outcome": "preserved", "status": "verified", "next_action": "none" },
+    { "capability": "Generation scripts (Python, scripts/)", "source": "github", "outcome": "preserved", "status": "preserved-not-run", "next_action": "none" },
+    { "capability": "Database / records", "source": "github", "outcome": "absent", "status": "n/a", "next_action": "none" },
+    { "capability": "Auth", "source": "github", "outcome": "absent", "status": "n/a", "next_action": "none" },
+    { "capability": "External providers / env vars", "source": "github", "outcome": "absent", "status": "n/a", "next_action": "none" }
+  ],
+  "verification": "build OK; home/dossier/boek/archief render with correct titles, hero image, nav and PDF archive"
+}

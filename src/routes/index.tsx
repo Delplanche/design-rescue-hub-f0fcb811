@@ -1,24 +1,16 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { ArrowDown, ArrowRight, BookOpen, FileText } from "lucide-react";
+import glassDossier from "@/assets/glass-dossier.jpg";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
-export const Route = createFileRoute("/")({
-  component: Index,
-});
+import { SiteShell, StatusBadge } from "@/components/site-shell";
+import { claims } from "@/lib/dossier-data";
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
+export const Route = createFileRoute("/")({head:()=>({meta:[{title:"De Marktplaats van de Ziel — Achter het profiel"},{name:"description",content:"Onderzoek en essays over de commerciële infrastructuur rond digitale intimiteit."},{property:"og:title",content:"De Marktplaats van de Ziel"},{property:"og:description",content:"Een onderzoeksarchief en boekproject over aandacht, data en commerciële nabijheid."},{property:"og:type",content:"website"},{name:"twitter:card",content:"summary_large_image"}]}),component:HomePage});
+
+function HomePage(){return <SiteShell><main>
+  <section className="manifest-hero"><img src={glassDossier} alt="Glazen archieflagen als beeld voor verborgen digitale infrastructuur"/><div className="manifest-image-shade"/><div className="manifest-copy"><p className="edition-line"><span>Onderzoek</span><span>Essay</span><span>Archief · 2026</span></p><h1>De Marktplaats<br/>van de <em>Ziel</em></h1><p className="manifest-subtitle">Achter het profiel</p><blockquote>“Echte intimiteit kan niet worden gekocht. Echte warmte heeft geen meter.”</blockquote><div className="hero-actions"><Link to="/dossier" className="primary-action"><BookOpen/>Open het dossier</Link><Link to="/boek" className="secondary-action">Lees het boekproject <ArrowRight/></Link></div></div><a href="#inleiding" className="scroll-cue"><ArrowDown/>Lees verder</a></section>
+  <section id="inleiding" className="manifest-intro"><div><p className="eyebrow text-alert">Het vertrekpunt</p><h2>Een persoonlijke interface kan een industriële achterkant hebben.</h2></div><div><p>Deze publicatie onderzoekt wat controleerbaar is en benoemt wat nog niet bewezen werd. Daarnaast staat een afzonderlijke essaylaag die de grotere morele en filosofische vragen verkent.</p><dl><div><dt>24</dt><dd>onderzoeksdelen</dd></div><div><dt>06</dt><dd>claims met status</dd></div><div><dt>09</dt><dd>herleidbare kernbronnen</dd></div></dl></div></section>
+  <section className="three-doors"><header><p className="eyebrow">Drie leeswijzen</p><h2>Feit, duiding en voorstel blijven uit elkaar.</h2></header><div><Link to="/dossier"><code>01 · ONDERZOEK</code><h3>Achter het profiel</h3><p>Controleerbare bevindingen over chatwerk, software, data, contracten en recht.</p><ArrowRight/></Link><Link to="/boek"><code>02 · ESSAY</code><h3>De commodificatie van de ziel</h3><p>Literaire reflecties over wat marktlogica met nabijheid en taal kan doen.</p><ArrowRight/></Link><Link to="/juridisch"><code>03 · VOORSTEL</code><h3>Van analyse naar beginselen</h3><p>Bestaande kaders en een toetsbaar model voor meer transparantie.</p><ArrowRight/></Link></div></section>
+  <section className="claim-ledger"><div><p className="eyebrow text-alert">Bewijs boven bewering</p><h2>Iedere centrale claim draagt haar eigen gewicht.</h2><Link to="/claims" className="text-link">Bekijk het volledige register <ArrowRight/></Link></div><div>{claims.slice(0,4).map(c=><article key={c.id}><div><code>{c.id}</code><StatusBadge status={c.status}/></div><h3>{c.title}</h3><p>{c.sources.length?`${c.sources.length} gekoppelde bron${c.sources.length>1?'nen':''}`:"Geen bevestigende bron"}</p></article>)}</div></section>
+  <section className="publication-band"><div><p className="eyebrow">Record-versie · 19 september 2026</p><h2>Lees online. Bewaar de vaste uitgave.</h2><p>De online editie bevat de actuele correcties. Drie vormgegeven PDF-edities bedienen onderzoek, beleid en de literaire lezer.</p></div><div className="publication-actions"><Link to="/archief" className="primary-action">Naar het archief <ArrowRight/></Link><a href={"/publicaties/de-marktplaats-van-de-ziel-editie-01.pdf"} target="_blank" rel="noreferrer" className="paper-link"><FileText/> Open integrale editie</a></div></section>
+  </main></SiteShell>}

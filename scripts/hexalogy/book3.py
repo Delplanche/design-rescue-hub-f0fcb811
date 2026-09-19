@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+"""Boek III — De neurobiologie van de afhankelijkheid."""
+
+CHAPTERS = [
+
+{"num": "01", "part": "DEEL I — HET SCHEMA",
+ "title": "Intermitterende variabele beloning",
+ "deck": "Eén gedragspsychologisch principe verklaart waarom onvoorspelbaar contact sterker bindt dan betrouwbaar contact. Het principe is oud, goed getest en volledig openbaar.",
+ "blocks": [
+  ("p", "Een beloning die elke keer volgt, wordt snel geleerd en snel losgelaten. Een beloning die soms volgt, op onvoorspelbare momenten, wordt trager geleerd en veel langzamer losgelaten. Dat is de kern van de intermitterende variabele bekrachtiging: het schema waarop elke gokautomaat en elke loterij is gebouwd. [BR-47] De Wereldgezondheidsorganisatie erkent de bijbehorende stoornissen — gokstoornis en gaming-stoornis — als diagnostische categorieën. [BR-48]"),
+  ("box", "Definitie",
+   "Intermitterende variabele beloning: een schema waarin de beloning onregelmatig en onvoorspelbaar volgt op gedrag. Het produceert hoge responsfrequenties en grote weerstand tegen uitdoving. Het is geen theorie over deze sector, maar een bevinding uit de algemene gedragsanalyse."),
+  ("h2", "Waarom een gesprek in dit schema past"),
+  ("p", "Een gesprek is per definitie onvoorspelbaar: het antwoord komt, of het komt niet; het komt snel, of na uren; het is warm, of afgemeten. Wanneer dat gesprek bovendien betaald contact is, valt de structuur van het beloningsschema samen met de structuur van het product. De gebruiker koopt geen zekerheid maar een kans."),
+  ("p", "Dit hoofdstuk beweert niet dat iemand dit zo heeft bedacht. Het stelt vast dat een betaald, onregelmatig en emotioneel geladen berichtenverkeer per constructie het kenmerkende patroon vertoont van het schema dat het sterkst bindt. Of dat patroon doelbewust wordt geëxploiteerd, is een aparte vraag — behandeld in hoofdstuk 3."),
+  ("h2", "Drie variabelen die het effect versterken"),
+  ("ul", ["Timing: onregelmatige antwoordintervallen produceren meer controlegedrag — het herhaald openen van de app — dan regelmatige intervallen.",
+          "Persoonlijke aanspreking: een bericht dat naar de eigen naam en biografie verwijst, wordt verwerkt als sociale beloning, niet als reclame.",
+          "Schaarste: een aanbod dat vervalt, verkort de beslissingstijd en verlaagt de kans dat de koper zijn besluit toetst."]),
+  ("p", "Elk van die drie is in de agency-software als functie aanwezig: verzendplanning, gepersonaliseerde velden en tijdgebonden aanbiedingen staan letterlijk op de publieke productpagina’s. [BR-23] [BR-24] [BR-25] De functies zijn niet in psychologische termen omschreven, maar hun werking is dat wel."),
+ ]},
+
+{"num": "02", "part": "DEEL I — HET SCHEMA",
+ "title": "Het gesprek als beloningsmachine",
+ "deck": "Van begroeting tot aanbod: de opeenvolging in een geoefend gesprek volgt een vast ritme. Dit hoofdstuk legt dat ritme naast wat bekend is over aandacht en beslissen.",
+ "blocks": [
+  ("p", "Uit het trainingsmateriaal dat journalisten van binnenuit vastlegden, komt een herkenbare opbouw naar voren: eerst aandacht en erkenning, dan persoonlijke vragen, dan gedeelde vertrouwelijkheid, en pas daarna het aanbod. [BR-07] [BR-15] [BR-16] De instructie die SRF vastlegde is expliciet over het doel van het eerste deel."),
+  ("q", "Schau, dass der Fan spitz bleibt, damit er möglichst viel Content kauft.",
+   "Instructie uit het trainingsmateriaal van een chatter-agentschap, SRF DOK, 16 januari 2024 [BR-16]"),
+  ("p", "Wat die opbouw psychologisch doet, is de volgorde omkeren waarin een koper normaal beslist. Bij een gewone aankoop gaat beoordeling vooraf aan binding. Hier gaat binding vooraf aan beoordeling: op het moment dat het aanbod valt, is de relatie al de context waarin het wordt gewogen. Een aanbod afslaan voelt dan niet als een consumentenbeslissing maar als een sociale afwijzing."),
+  ("box", "Feit, interpretatie, voorstel",
+   "Feit: de gespreksopbouw is vastgelegd in trainingsmateriaal van drie onafhankelijke journalisten. Interpretatie: die opbouw plaatst de aankoopbeslissing in een sociale in plaats van een commerciële context. Voorstel: behandel een betaald aanbod binnen een als persoonlijk gepresenteerd gesprek als een aparte categorie in het consumentenrecht — uitgewerkt in Boek V."),
+  ("h2", "Uitgestelde beloning en herhaald controleren"),
+  ("p", "Chatters beschrijven expliciet het bewust laten wachten, het inzetten van late berichten en het spelen met beschikbaarheid. [BR-07] [BR-21] Het effect is bekend: onzekerheid over het moment van antwoord verhoogt de frequentie waarmee een gebruiker de app opent. Die frequentie is voor het bureau geen bijproduct maar de bron van de omzet, omdat elk geopend gesprek een nieuw verkoopmoment is."),
+  ("p", "Hier ligt het kruispunt tussen Boek II en dit boek. De financiële structuur beloont het verhogen van het aantal contactmomenten; de psychologie levert de methode die dat aantal verhoogt. De twee versterken elkaar zonder dat iemand in de keten een verslavingsmodel hoeft te hebben geformuleerd."),
+ ]},
+
+{"num": "03", "part": "DEEL II — DE BETROKKENEN",
+ "title": "Wat het model wel en niet verklaart over de abonnee",
+ "deck": "Het is verleidelijk om de koper als slachtoffer of als dwaas voor te stellen. Beide beelden zijn onjuist en beide maken het probleem kleiner dan het is.",
+ "blocks": [
+  ("p", "De abonnee in het Reuters-onderzoek vatte zijn eigen positie precies samen: ‘I fell for her, but I’m not stupid.’ [BR-01] Dat is geen zelfrechtvaardiging maar een accurate beschrijving. Hij beschikte niet over de informatie die nodig was om anders te beslissen, en die informatie was voor hem redelijkerwijs niet te verkrijgen."),
+  ("p", "Het beloningsschema verklaart waarom gedrag in stand blijft. Het verklaart niet waarom iemand begint, en het verklaart al helemaal geen individueel geval. Motieven lopen uiteen: eenzaamheid, nieuwsgierigheid, gewoonte, plezier. Een dossier dat uit één schema een psychologisch portret van een hele groep afleidt, doet hetzelfde als de bedrijfstak die het bekritiseert: het reduceert mensen tot een categorie."),
+  ("box", "Bewijsgrens",
+   "Dit boek stelt geen diagnoses. Er is geen klinisch onderzoek verricht onder abonnees van deze platformen, en dit dossier beschikt over geen enkele patiëntgegevens. Alles wat hier staat, is de toepassing van algemeen aanvaarde gedragspsychologie op een openbaar gedocumenteerde gespreksstructuur. [CL-25]"),
+  ("h2", "Waar het model wel bruikbaar is"),
+  ("p", "Het model is bruikbaar op het niveau van ontwerp, niet van persoon. Het beantwoordt de vraag: welk gedrag maakt deze inrichting waarschijnlijker? Dat is dezelfde vraag die het toezicht op kansspelen, op mobiele games met aankopen en op financiële producten met hefboomwerking al stelt. In die domeinen is ontwerpregulering normaal: verplichte pauzes, uitgavenplafonds, verplichte mededelingen. In het domein van betaald persoonlijk contact bestaat zij niet."),
+  ("p", "Dat verschil is het eigenlijke onderwerp. Niet of iemand zwak is, maar waarom een inrichting die in andere sectoren als risicovol wordt behandeld hier zonder enige eis wordt uitgerold."),
+ ]},
+
+{"num": "04", "part": "DEEL II — DE BETROKKENEN",
+ "title": "Empathic burnout: de arbeid van het meeleven",
+ "deck": "Aan de andere kant van het scherm zit iemand die op commissie empathie produceert, acht uur per dag, voor meerdere personen tegelijk.",
+ "blocks": [
+  ("p", "Chatters beschrijven het werk als emotioneel uitputtend: rouw, eenzaamheid en suïcidale uitingen van abonnees komen dagelijks voorbij, terwijl de medewerker zelf geen opleiding, geen supervisie en geen nazorg heeft. [BR-06] [BR-19] [BR-20] Dat is hulpverlenersarbeid zonder enige van de waarborgen die hulpverlening kent, uitgevoerd tegen een uurloon onder de twee dollar en beoordeeld op omzet."),
+  ("q", "It’s kind of icky when you think about it, because you’ll have to do sexting a lot of times.",
+   "Chatter, in BBC News, 11 maart 2026 [BR-06]"),
+  ("p", "Wetenschappelijk onderzoek naar deze arbeidsvorm bestaat inmiddels. Schuchmann beschrijft hoe creators het verhaal vertellen dat de ander die dag wil horen. [BR-27] Onderzoek in Sexuality & Culture documenteert grens- en impressiemanagement als continue arbeidsopgave. [BR-28] Brasseur plaatst het geheel in het kader van total self-commodification: niet alleen het beeld, maar de hele persoon wordt handelswaar. [BR-26]"),
+  ("box", "Definitie",
+   "Empathic burnout: uitputting die ontstaat door het langdurig en beroepsmatig produceren van meeleven zonder herstelruimte. Het begrip is ontleend aan onderzoek naar zorg- en hulpverleningsberoepen; de toepassing op dit werk is in dit dossier een interpretatie, geen gediagnosticeerde bevinding."),
+  ("h2", "De structurele fout"),
+  ("p", "Het probleem is niet dat het werk zwaar is. Het is dat de zwaarte volledig buiten elke bescherming valt. De persoon die intieme gesprekken voert, staat in geen enkel document dat de abonnee ziet, valt onder het arbeidsrecht van een ander continent, en wordt betaald naar de omzet die zij uit een emotionele relatie haalt die zij zelf moet onderhouden. Elk van die drie kenmerken zou afzonderlijk aanleiding zijn voor toezicht. Samen produceren ze een beroep zonder adres."),
+ ]},
+
+{"num": "05", "part": "DEEL II — DE BETROKKENEN",
+ "title": "De creator onder algoritmisch management",
+ "deck": "Tussen platform en bureau staat de persoon op wiens naam alles gebeurt — en die vaak de minste zeggenschap heeft over wat er onder die naam wordt geschreven.",
+ "blocks": [
+  ("p", "Onderzoek naar algoritmisch management op digitale arbeidsplatformen beschrijft hoe zichtbaarheid, ranking en beschikbaarheidsdruk het gedrag van de werkende sturen zonder dat er een leidinggevende bestaat. [BR-29] In deze sector komt daar een tweede laag bovenop: het bureau, dat de zichtbaarheidslogica van het platform vertaalt naar concrete eisen over publicatiefrequentie, responstijd en prijs."),
+  ("p", "Het resultaat is een positie met maximale naamsverantwoordelijkheid en minimale operationele zeggenschap. De creator draagt het gezicht, het reputatierisico en in de meeste rechtsstelsels ook de juridische verantwoordelijkheid voor wat onder haar account gebeurt. De feitelijke gespreksvoering ligt bij een ploeg die zij niet aanstuurt en soms niet kent."),
+  ("box", "Bewijsgrens",
+   "Niet elke creator werkt met een bureau, en niet elk bureau neemt het gesprek over. Dit hoofdstuk beschrijft de configuratie die in de bronnen is gedocumenteerd, niet de hele sector. Cijfers over hoe vaak die configuratie voorkomt, bestaan niet."),
+  ("h2", "De drie vormen van verlies van zeggenschap"),
+  ("ul", ["Toegang: wachtwoord- en herstelgegevens staan bij het bureau; de creator kan zichzelf buitengesloten aantreffen. [BR-05] [BR-22]",
+          "Geld: uitbetalingen lopen naar een rekening van een derde; de creator ontvangt een doorbetaling en kan de bron niet controleren. [BR-14] [BR-22]",
+          "Stem: wat onder haar naam wordt geschreven — inclusief beloften, uitingen en onderhandelingen — staat buiten haar."]),
+  ("p", "Die drie samen zijn geen arbeidsvoorwaardelijk detail. Zij vormen de kern van de juridische analyse in Boek V, omdat zij bepalen wie in werkelijkheid de handelaar is in de zin van het consumentenrecht — en dus wie aansprakelijk is voor de misleiding."),
+ ]},
+
+{"num": "06", "part": "DEEL III — DE GRENS",
+ "title": "Waar dit boek stopt",
+ "deck": "Psychologie is het makkelijkste terrein om te overdrijven. Dit hoofdstuk zet de grenzen expliciet, zodat de rest bruikbaar blijft.",
+ "blocks": [
+  ("p", "Dit boek doet vier dingen niet. Het stelt geen diagnoses bij abonnees, creators of chatters. Het beweert niet dat de sector een verslavingsmodel toepast; dat is uitdrukkelijk als onbevestigd geregistreerd. [CL-25] Het gebruikt geen hersenscan-retoriek om een gedragsbevinding zwaarder te laten klinken dan zij is. En het leidt uit een beloningsschema geen maatschappelijk effect af; dat is het onderwerp van Boek IV, en daar wordt het even streng behandeld."),
+  ("box", "Wat vaststaat",
+   "Vastgesteld: variabele, onvoorspelbare beloning houdt gedrag langer in stand dan vaste beloning [CL-24]; de gespreksstructuur in deze sector is geoefend en vastgelegd in trainingsmateriaal [CL-10]; de software biedt timing, personalisatie en schaarste als functies [CL-02]. Niet vastgesteld: dat die drie doelbewust als verslavingsontwerp zijn samengebracht."),
+  ("h2", "De bruikbare conclusie"),
+  ("p", "Wat overblijft is genoeg. Een inrichting waarvan bekend is dat zij gedrag sterk in stand houdt, wordt in deze markt zonder enige mededeling, zonder uitgavenplafond en zonder afkoelingsmoment aan particulieren aangeboden, terwijl vergelijkbare inrichtingen elders onder toezicht staan. Die asymmetrie is geen psychologische hypothese maar een beleidsfeit, en zij is met bestaande instrumenten te corrigeren."),
+ ]},
+]
