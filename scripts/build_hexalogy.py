@@ -117,8 +117,8 @@ def title_page(book, st, width, story):
     story.append(Spacer(1, 10))
     story.append(Paragraph(
         "De zes delen: I De technologische deceptie · II De financiële schaduweconomie · "
-        "III De neurobiologie van de afhankelijkheid · IV De sociologische implosie · "
-        "V Het juridisch failliet &amp; Lex Humanitas Digitalis · VI Het post-digitale verzet.",
+        "III De neurobiologie van de verslaving · IV De sociologische implosie · "
+        "V Het juridisch failliet &amp; modelwetgeving · VI Het post-digitale verzet.",
         st["caption"]))
     story.append(PageBreak())
 

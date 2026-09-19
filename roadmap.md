@@ -1,9 +1,10 @@
-# Roadmap — PDF-publicaties verdiepen
+# Roadmap — definitieve Hexalogie
 
-- [ ] Bronnenonderzoek: journalistiek, rechtspraak/toezicht, CRM-software-marketing, academisch, wetsartikelen (subagent)
-- [ ] Geüpload dossier (Naamloos_document_1.pdf) verwerken als ruw materiaal; claims scheiden in vastgesteld / betwist / hypothese
-- [ ] Contentlaag herschrijven: dichte hoofdstukken met echte casuïstiek, citaten, cijfers, contractuele/technische architectuur
-- [ ] Bronnenregister met volledige verwijzingen + voetnootnummers in de tekst
-- [ ] Generatiescript herbouwen: geen lege titelpagina's, doorlopende gezette kolomtekst, noten, register
-- [ ] Alle drie PDF's opnieuw genereren en visueel controleren (pdftoppm + inspectie)
-- [ ] Sitecontent (paginateksten, claims, bronnen) in lijn brengen met het nieuwe dossier
+- [x] Eén centrale Bibliotheek met Boek I–VI en de pers-whitepaper
+- [x] Zes modulaire onderzoekspijlers met gescheiden feiten, hypothesen en voorstellen
+- [x] Werkelijke paginatellingen en formaten publiceren
+- [x] Oude integrale editie, dossier-PDF en essay-reader verwijderen
+- [x] Publicatiemetadata centraal beheerbaar maken in Lovable Cloud
+- [x] Speculatieve uitstervingskaders volledig uit site en Boek IV verwijderen
+- [x] De zeven PDF’s opnieuw genereren en inhoudelijk controleren
+- [x] Downloadroute, mobiele weergave en registers controleren
